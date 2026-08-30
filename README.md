@@ -1,13 +1,13 @@
-# EMNLP 2026 Anonymous Review Artifact
+# MedQA-MM: Shortcuts Behind Medical Visual Reasoning
 
-This repository is prepared as an anonymous review artifact for an EMNLP 2026 submission on shortcut behavior in medical multimodal multiple-choice question answering.
+This is the official repository for the EMNLP 2026 paper **“MedQA-MM: Shortcuts Behind Medical Visual Reasoning.”**
 
-It is intended to help reviewers inspect the released reference code, dataset locators, and core shortcut-auditing methods described in the paper. The repository currently contains a compact review-facing subset of the project. The full codebase, complete experiment logs, generated repair artifacts, raw aggregate results, and additional documentation will be released upon acceptance.
+It provides the released reference code, dataset locators, and core shortcut-auditing methods described in the paper. The repository currently contains the public release subset of the project; additional code, experiment logs, generated repair artifacts, aggregate results, and documentation will be added as they are prepared for release.
 
 ## Repository Contents
 
 - `dataset/`
-  - Identifier-only release files for the MedQA-MM review subset.
+  - Identifier-only release files for MedQA-MM.
   - These files provide item locators and dataset metadata needed to identify the released benchmark items without redistributing external dataset payloads.
 
 - `mcq_inference/`
@@ -20,7 +20,7 @@ It is intended to help reviewers inspect the released reference code, dataset lo
 
 - `shortcut/`
   - Core method code for the shortcut analyses discussed in the paper.
-  - These files implement the main audit, repair, adjudication, and summarization logic for the shortcut families released for review.
+  - These files implement the main audit, repair, adjudication, and summarization logic for the publicly released shortcut families.
 
 ## Shortcut Method Files
 
@@ -44,8 +44,8 @@ It is intended to help reviewers inspect the released reference code, dataset lo
   - Artificial image-hint shortcut analysis.
   - Implements broad and strict image-hint review logic, cue localization, mask preparation, image-edit request construction, repair judging, cue-use judging, and repeated-evaluation summaries.
 
-## Reviewer Notes
+## Release Notes
 
-This artifact is designed for method inspection rather than full numerical reproduction. Some paper-level outputs, including complete generated manifests, edited images, model prediction logs, expert-review records, and aggregate result tables, are not included in this anonymous review subset.
+This repository supports method inspection rather than full numerical reproduction. Some paper-level outputs, including complete generated manifests, edited images, model prediction logs, expert-review records, and aggregate result tables, are not included in the current public release.
 
-The complete project release after acceptance will include the remaining code, result artifacts, and documentation needed for full reproduction of the reported experiments.
+Additional materials will be added as they are prepared for public release.
