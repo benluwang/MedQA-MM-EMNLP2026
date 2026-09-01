@@ -317,9 +317,6 @@ def resolved_locator(locator: dict[str, Any]) -> dict[str, Any]:
         record["case_number"] = int(locator["case_number"])
     if locator.get("mmmu_subset"):
         record["mmmu_subset"] = str(locator["mmmu_subset"])
-    legacy_repo = locator.get("source_repo")
-    if legacy_repo and str(legacy_repo) != spec["repo_id"]:
-        record["legacy_source_repo"] = str(legacy_repo)
     return record
 
 
