@@ -1,0 +1,31 @@
+{
+  "MedThinkVQA": {
+    "repo_id": "bio-nlp-umass/MedThinkVQA",
+    "revision": "5555b80e167c4796efab92fe709fb05914077dc0",
+    "split": "test",
+    "license": "CC BY-NC-SA 4.0",
+    "terms_url": "https://huggingface.co/datasets/bio-nlp-umass/MedThinkVQA"
+  },
+  "MedXpertQA": {
+    "repo_id": "TsinghuaC3I/MedXpertQA",
+    "revision": "7e7c465a68eb2b866926bfa59c8c9d17a8daba65",
+    "config": "MM",
+    "split": "test",
+    "license": "See source terms; evaluation-only/no-online-sharing statement in paper",
+    "terms_url": "https://proceedings.mlr.press/v267/zuo25a.html"
+  },
+  "MMMU-HM": {
+    "repo_id": "MMMU/MMMU",
+    "revision": "98e6ac0cb9b7b2cd2c991b85a50762edc4aedc68",
+    "split": "test",
+    "subsets": [
+      "Basic_Medical_Science",
+      "Clinical_Medicine",
+      "Diagnostics_and_Laboratory_Medicine",
+      "Pharmacy",
+      "Public_Health"
+    ],
+    "license": "Apache-2.0; source-level copyright disclaimer also applies",
+    "terms_url": "https://huggingface.co/datasets/MMMU/MMMU"
+  }
+}

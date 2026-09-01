@@ -4,11 +4,29 @@ This is the official repository for the EMNLP 2026 paper **“MedQA-MM: Shortcut
 
 It provides the released reference code, dataset locators, and core shortcut-auditing methods described in the paper. The repository currently contains the public release subset of the project; additional code, experiment logs, generated repair artifacts, aggregate results, and documentation will be added as they are prepared for release.
 
+**Public dataset:** [🤗 bio-nlp-umass/MedQA-MM](https://huggingface.co/datasets/bio-nlp-umass/MedQA-MM)
+
+## MedQA-MM Dataset Release
+
+The public Hugging Face release contains the complete 1,000-item ID list: 207 MedThinkVQA locators, 450 MedXpertQA-MM locators, and 343 MMMU Health/Medicine locators. It is identifier-only and does not redistribute source questions, answer choices, labels, clinical text, or images.
+
+Pinned source revisions and [`dataset/reconstruct_medqa_mm.py`](dataset/reconstruct_medqa_mm.py) let users validate every locator and, after accepting the upstream terms, build a local source-linked evaluation copy:
+
+```bash
+python -m pip install -r dataset/requirements.txt
+python dataset/reconstruct_medqa_mm.py \
+  --output-dir medqa_mm_local \
+  --materialize \
+  --accept-source-terms
+```
+
+The reconstructed payload is for local evaluation under the three upstream sources' terms and must not be redistributed. See [`dataset/README.md`](dataset/README.md) for the source revisions, licenses, restrictions, schema, and validation procedure.
+
 ## Repository Contents
 
 - `dataset/`
-  - Identifier-only release files for MedQA-MM.
-  - These files provide item locators and dataset metadata needed to identify the released benchmark items without redistributing external dataset payloads.
+  - Public identifier-only release files for MedQA-MM, mirrored at [Hugging Face](https://huggingface.co/datasets/bio-nlp-umass/MedQA-MM).
+  - Provides the complete ID list, source revisions, release documentation, and a local reconstruction/validation script without redistributing external dataset payloads.
 
 - `mcq_inference/`
   - Utilities for running multiple-choice inference experiments.

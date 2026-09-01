@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+medqa_mm_reconstructed/
+medqa_mm_validation/
+medqa_mm_local/
